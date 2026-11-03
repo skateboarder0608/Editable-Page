@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This Is An Editable Page</title>
+		<style>
+			body{
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<button onclick="document.body.contentEditable = 'true'; document.designMode = 'on';">Click to Edit</button>
+		<button onclick="document.body.contentEditable = 'false'; document.designMode = 'off'">Press This to Turn Off Editing</button>
+		<p>If you clicked the button you're able to edit this.</p>
+		<h6>This page will not save.</h6>
+	</body>
+</html>
