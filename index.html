@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>This Is An Editable Page</title>
-		<link rel="x-icon" type="image/jpeg" href="Images/EditablePage.jpeg">
+		<link rel="icon" type="image/x-icon" href="Images/EditablePage.jpeg">
 		<style>
 			body{
 				font-family: sans-serif;
@@ -10,8 +10,12 @@
 		</style>
 	</head>
 	<body>
-		<button onclick="document.body.contentEditable = 'true'; document.designMode = 'on';">Click to Edit</button>
-		<button onclick="document.body.contentEditable = 'false'; document.designMode = 'off'">Press This to Turn Off Editing</button>
+		<div>
+			<p>
+				<button onclick="document.body.contentEditable = 'true'; document.designMode = 'on';">Click to Edit</button>
+				<button onclick="document.body.contentEditable = 'false'; document.designMode = 'off'">Press This to Turn Off Editing</button>
+			</p>
+		</div>
 		<p>If you clicked the button you're able to edit this.</p>
 		<h6>This page will not save.</h6>
 		<button onclick="window.print()">Print</button>
